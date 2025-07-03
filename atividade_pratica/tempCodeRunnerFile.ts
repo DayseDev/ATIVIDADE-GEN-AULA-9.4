@@ -1,0 +1,1 @@
+let num = readline.questionInt("Digite o numero que voce deseja encontrar: ");
