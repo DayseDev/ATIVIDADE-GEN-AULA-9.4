@@ -7,9 +7,11 @@ import readline = require("readline-sync");
 
 const list: Set<number> = new Set<number>();
 
+console.log("Digite 10 numeros inteiros e nao repetidos: ");
+
 for(let i = 1; i <= 10; i++){
-    let num = readline.questionInt("Digite 10 numeros inteios nao repetidos: ");
-    list.add(num);
+    let num = readline.questionInt();
+    list.add(num);    
 }
 
 const arrayOrdenado: number[] = [...list].sort((a,b) => a - b);
